@@ -137,6 +137,11 @@
             <artifactId>github-api</artifactId>
             <version>1.114</version>
         </dependency>
+        <dependency>
+            <groupId>pl.flexhc.flexcore</groupId>
+            <artifactId>flexcore</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <repositories>

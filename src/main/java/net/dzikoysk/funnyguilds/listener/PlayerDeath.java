@@ -280,7 +280,10 @@ public class PlayerDeath implements Listener {
             if (config.ignoreDisabledDeathMessages) {
                 for (Player player : event.getEntity().getWorld().getPlayers()) {
                     event.setDeathMessage(null);
-                    player.sendMessage(deathMessage);
+
+                    if(pl.flexhc.flexcore.user.User.get(player.getUniqueId()).getDeathMessages()){
+                        player.sendMessage(deathMessage);
+                    }
                 }
             }
             else {
